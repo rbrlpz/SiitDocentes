@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/guinda"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/grupos_asignados"
+            android:textColor="@color/blanco"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lvGrupos"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        </ListView>
+</LinearLayout><!-- From: file:/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/layout/activity_grupos.xml -->

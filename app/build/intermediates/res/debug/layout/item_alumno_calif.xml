@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:id="@+id/item_alumno">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="left"
+                android:id="@+id/tvControl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                style="@android:style/TextAppearance.DeviceDefault.Small" />
+            <TextView
+                android:id="@+id/tvNombreAlu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                style="@android:style/TextAppearance.DeviceDefault.Medium" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etCalif"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="3"
+            android:singleLine="true"
+            android:layout_gravity="right|top">
+
+            <requestFocus />
+        </EditText>
+    </FrameLayout>
+
+</LinearLayout>
+<!-- From: file:/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/layout/item_alumno_calif.xml -->

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res" >
+            <file
+                name="ic_launcher"
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/values-w820dp/dimens.xml"
+                qualifiers="w820dp-v13" >
+                <dimen name="activity_horizontal_margin" >64dp
+                </dimen>
+            </file>
+            <file
+                name="ic_launcher"
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher2"
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/drawable-hdpi/ic_launcher2.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="logo"
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/drawable-hdpi/logo.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/values/styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="AppTheme"
+                    parent="android:Theme.Holo.Light.DarkActionBar" >
+
+                    <!-- Customize your theme here. -->
+                </style>
+            </file>
+            <file
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/values/dimens.xml"
+                qualifiers="" >
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+            </file>
+            <file
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="logo_itd" >Logo ITD
+                </string>
+                <string name="author2" >José Roberto López Quiñones
+                </string>
+                <string name="app_name" >Siit Docentes
+                </string>
+                <string name="AcercaDe" >AcercaDe
+                </string>
+                <string name="author1" >Autor:
+                </string>
+                <string name="unidad" >Unidad
+                </string>
+                <string name="hint_usuario" >Escriba su usuario
+                </string>
+                <string name="email2" >rlopez@itdurango.edu.mx
+                </string>
+                <string name="Descargar" >Descargar
+                </string>
+                <string name="email1" >Email:
+                </string>
+                <string name="contrasena" >Contraseña
+                </string>
+                <string name="Disclaimer" >La presente aplicación se entrega como está y sin garantía de uso.
+        NO ME HAGO RESPONSABLE por cualquier dato erroneo que se agregue al sistema, la aplicación se encuentra en fase de pruebas y está abierto a la posibilidad de mejoras sin tener un tiempo de respuesta específico.
+        El código fuente será público y liberado bajo la 
+<![CDATA[ <a href="http://opensource.org/licenses/MIT">licencia MIT</a>]]> al término del presente periodo Agosto-Diciembre 2014 por motivos de que es un proyecto encargado a los alumnos.
+        Es importante saber que NO SE ESTÁ ACCEDIENDO al sistema del Tecnológico de forma ilegal a través de ninguna forma de hacking, la aplicación es solamente un navegador en texto que procesa el resultado de las peticiones y lo proyecta en una interfaz android, la seguridad de la aplicación depende directamente de lo que se ofrece en el servidor del 
+<![CDATA[ <a href="http://siit.itdurango.edu.mx">SIIT</a>]]></string>
+                <string name="recordar_login" >Recordar datos de acceso 
+                </string>
+                <string name="login" >Acceder
+                </string>
+                <string name="Cargar" >Cargar
+                </string>
+                <string name="usuario" >Usuario
+                </string>
+                <string name="grupos_asignados" >Grupos asignados
+                </string>
+                <string name="lista_alumnos" >Lista de alumnos
+                </string>
+                <string name="Guardar" >Guardar
+                </string>
+            </file>
+            <file
+                name="login"
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/menu/login.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="ic_launcher"
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/values-v21/styles.xml"
+                qualifiers="v21" >
+
+                <style
+                    name="AppTheme"
+                    parent="android:Theme.Material.Light" >
+                </style>
+            </file>
+            <file
+                name="activity_grupos"
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/layout/activity_grupos.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_alumnos"
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/layout/activity_alumnos.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="item_alumno_calif"
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/layout/item_alumno_calif.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="item_grupos"
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/layout/item_grupos.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_login"
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/layout/activity_login.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="ic_launcher"
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="alumnos"
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/menu/alumnos.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/values/colors.xml"
+                qualifiers="" >
+                <color name="blanco" >#FFFFFF
+                </color>
+                <color name="guinda" >#ff891615
+                </color>
+            </file>
+            <file
+                name="acerca_de"
+                path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/layout/acerca_de.xml"
+                qualifiers=""
+                type="layout" />
+        </source>
+        <source path="/home/rober/AndroidstudioProjects/SiitDocentes/app/build/generated/res/rs/debug" />
+        <source path="/home/rober/AndroidstudioProjects/SiitDocentes/app/build/generated/res/generated/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/rober/AndroidstudioProjects/SiitDocentes/app/src/debug/res" />
+    </dataSet>
+
+</merger>

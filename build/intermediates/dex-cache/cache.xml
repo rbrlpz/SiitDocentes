@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/home/rober/AndroidstudioProjects/SiitDocentes/app/build/intermediates/pre-dexed/debug/jsoup-1.7.3-4986982414c38c3e9f4dcd6eb7c57d3530d39911.jar"
+        jar="/home/rober/AndroidstudioProjects/SiitDocentes/app/libs/jsoup-1.7.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="ab1f22cadc2f8b514e55ba368f5128056fe304da"/>
+
+</pre-dex-items>

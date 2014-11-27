@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/values/colors.xml -->
+    <eat-comment />
+
+    <color name="blanco">#FFFFFF</color>
+    <color name="guinda">#ff891615</color>
+    <!-- From: file:/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/values/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="AcercaDe">AcercaDe</string>
+    <string name="Cargar">Cargar</string>
+    <string name="Descargar">Descargar</string>
+    <string name="Disclaimer">La presente aplicación se entrega como está y sin garantía de uso.
+        NO ME HAGO RESPONSABLE por cualquier dato erroneo que se agregue al sistema, la aplicación se encuentra en fase de pruebas y está abierto a la posibilidad de mejoras sin tener un tiempo de respuesta específico.
+        El código fuente será público y liberado bajo la <![CDATA[ <a href="http://opensource.org/licenses/MIT">licencia MIT</a>]]> al término del presente periodo Agosto-Diciembre 2014 por motivos de que es un proyecto encargado a los alumnos.
+        Es importante saber que NO SE ESTÁ ACCEDIENDO al sistema del Tecnológico de forma ilegal a través de ninguna forma de hacking, la aplicación es solamente un navegador en texto que procesa el resultado de las peticiones y lo proyecta en una interfaz android, la seguridad de la aplicación depende directamente de lo que se ofrece en el servidor del <![CDATA[ <a href="http://siit.itdurango.edu.mx">SIIT</a>]]></string>
+    <string name="Guardar">Guardar</string>
+    <string name="app_name">Siit Docentes</string>
+    <string name="author1">Autor:</string>
+    <string name="author2">José Roberto López Quiñones</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="email1">Email:</string>
+    <string name="email2">rlopez@itdurango.edu.mx</string>
+    <string name="grupos_asignados">Grupos asignados</string>
+    <string name="hint_usuario">Escriba su usuario</string>
+    <string name="lista_alumnos">Lista de alumnos</string>
+    <string name="login">Acceder</string>
+    <string name="logo_itd">Logo ITD</string>
+    <string name="recordar_login">Recordar datos de acceso </string>
+    <string name="unidad">Unidad</string>
+    <string name="usuario">Usuario</string>
+    <!-- From: file:/home/rober/AndroidstudioProjects/SiitDocentes/app/src/main/res/values/styles.xml -->
+    <eat-comment />
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>
