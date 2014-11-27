@@ -86,9 +86,8 @@ public class ActivityAlumnos extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alumnos);
-        /*
-        * Se recibe un parametro llamado "resultado" el cual contiene todo el html de la página en cuestión
-        * */
+
+        //Se recibe un parametro llamado "resultado" el cual contiene el html de la página en cuestión
         Bundle bundle = getIntent().getExtras();
         String resultado = bundle.getString("resultado");
 

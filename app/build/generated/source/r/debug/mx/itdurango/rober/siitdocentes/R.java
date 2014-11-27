@@ -13,6 +13,7 @@ public final class R {
     public static final class color {
         public static final int blanco=0x7f040000;
         public static final int guinda=0x7f040001;
+        public static final int negro=0x7f040002;
     }
     public static final class dimen {
         public static final int activity_horizontal_margin=0x7f050000;
@@ -74,14 +75,26 @@ public final class R {
         public static final int contrasena=0x7f060008;
         public static final int email1=0x7f060009;
         public static final int email2=0x7f06000a;
-        public static final int grupos_asignados=0x7f06000b;
-        public static final int hint_usuario=0x7f06000c;
-        public static final int lista_alumnos=0x7f06000d;
-        public static final int login=0x7f06000e;
-        public static final int logo_itd=0x7f06000f;
-        public static final int recordar_login=0x7f060010;
-        public static final int unidad=0x7f060011;
-        public static final int usuario=0x7f060012;
+        public static final int errorGuardaParciales=0x7f06000b;
+        public static final int error_cargaCalif=0x7f06000c;
+        public static final int error_descargaPlantilla=0x7f06000d;
+        public static final int error_parser=0x7f06000e;
+        public static final int grupos_asignados=0x7f06000f;
+        public static final int guardaParcialesCorrecto=0x7f060010;
+        public static final int hint_usuario=0x7f060011;
+        public static final int lista_alumnos=0x7f060012;
+        public static final int load_guardarCalificaciones=0x7f060013;
+        public static final int loading_calificaciones=0x7f060014;
+        public static final int loading_grupos=0x7f060015;
+        public static final int login=0x7f060016;
+        public static final int login_correcto=0x7f060017;
+        public static final int login_incorrecto=0x7f060018;
+        public static final int logo_itd=0x7f060019;
+        public static final int recordar_login=0x7f06001a;
+        public static final int tituloDialogo=0x7f06001b;
+        public static final int unidad=0x7f06001c;
+        public static final int usuario=0x7f06001d;
+        public static final int valida_login=0x7f06001e;
     }
     public static final class style {
         /**  Customize your theme here. 

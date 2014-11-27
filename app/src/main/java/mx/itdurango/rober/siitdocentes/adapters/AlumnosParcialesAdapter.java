@@ -110,7 +110,7 @@ public class AlumnosParcialesAdapter extends BaseAdapter {
         holder.tvControl.setText(myItems.get(position).getControl());
         holder.tvNombreAlu.setText(myItems.get(position).getNombre());
         holder.tvNombreAlu.setTextColor(Color.BLACK);
-        holder.tvNombreAlu.setMaxWidth(width - holder.etCalif.getWidth());
+        //holder.tvNombreAlu.setMaxWidth(width - holder.etCalif.getWidth());
 
 
         //llena el EditText con el valor que se tiene en el arreglo
