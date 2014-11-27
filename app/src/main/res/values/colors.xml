@@ -2,4 +2,5 @@
 <resources>
     <color name="blanco">#FFFFFF</color>
     <color name="guinda">#ff891615</color>
+    <color name="negro">#000000</color>
 </resources>

@@ -401,10 +401,7 @@ public class ActivityAlumnos extends Activity {
                         LoadFile(m_chosen);
                     }
                 });
-
         FolderChooseDialog.chooseFile_or_Dir();
-
-
     }
 
     /**
@@ -443,8 +440,6 @@ public class ActivityAlumnos extends Activity {
             Toast.makeText(this, getString(R.string.error_cargaCalif), Toast.LENGTH_LONG).show();
             e.printStackTrace();
         }
-
-
     }
 
 }

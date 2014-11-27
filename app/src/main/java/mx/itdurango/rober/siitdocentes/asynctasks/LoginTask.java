@@ -27,13 +27,11 @@ package mx.itdurango.rober.siitdocentes.asynctasks;
 
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.util.Log;
 import android.widget.Toast;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
-import org.apache.http.StatusLine;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.message.BasicNameValuePair;
@@ -72,43 +70,44 @@ public class LoginTask extends AsyncTask<String, String, String> {
     @Override
     protected void onPostExecute(String resultado) {
         super.onPostExecute(resultado);
-
-
+        //Finaliza el progress dialog
         Estaticos.ringProgressDialog.dismiss();
+        //valida el resultado obtenido, en caso de haber puesto los datos correctamente se encontrará con una redirección javascript
         if (resultado.contains("window.top.location")) {
             Toast.makeText(context, context.getString(R.string.login_correcto), Toast.LENGTH_SHORT).show();
-
+            //abre una nueva actividad que muestra el listado de los grupos asignados al docente.
             Intent intent = new Intent(context, ActivityGrupos.class);
             context.startActivity(intent);
 
         } else {
+            //en caso que no se encuentre la cadena de redireccion javascript muestra un mensaje de aviso.
             Toast.makeText(context, context.getString(R.string.login_incorrecto), Toast.LENGTH_SHORT).show();
         }
     }
 
     @Override
     protected String doInBackground(String... valores) {
-
+        //genera una peticion HttpPost hacia la página de validación de login, dicha página se obtiene del código html del acceso
+        //<form method="POST" action="acceso.php"...>
         HttpPost request = new HttpPost(Estaticos.LOGIN_PAGE);
+        //se recuperan los parametros enviados desde el login
         String usr = valores[0], pass = valores[1], tipo = valores[2];
         HttpResponse response;
         String responseBody = "";
         try {
-
-            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(
-                    2);
+            //se generan los parametros a enviarse
+            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
             nameValuePairs.add(new BasicNameValuePair("usuario", usr));
             nameValuePairs.add(new BasicNameValuePair("contrasena", pass));
             nameValuePairs.add(new BasicNameValuePair("tipo", tipo));
             request.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-
+            //se ejecuta la petición sobre el "navegador" general para preservar la sesión
             response = Estaticos.BROWSER.execute(request);
-            StatusLine status = response.getStatusLine();
-            Log.d("main", "estatus:" + status.getStatusCode());
-
+            //recupera los datos del httpResponse.
             HttpEntity entity = response.getEntity();
 
             if (entity != null) {
+                //asigna el contenido html a una variable a ser procesada por el onPostExecute
                 responseBody = EntityUtils.toString(entity);
             }
         } catch (Exception e) {

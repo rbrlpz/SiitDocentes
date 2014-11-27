@@ -23,22 +23,34 @@ public class Estaticos {
     public static final String LISTADO_GRUPOS = "http://siit.itdurango.edu.mx/modulos/doc/certificacion/grupos.php?accion=calificaciones_parciales";
     public static final String GUARDAR_PARCIALES = "http://siit.itdurango.edu.mx/modulos/doc/certificacion/calificaciones_parciales_bd.php";//?periodo=20143&materia=IT8851&grupo=8A";
     public static final String REGISTRAR_PARCIALES = "http://siit.itdurango.edu.mx/modulos/doc/certificacion/";//calificaciones_parciales.php";//?periodo=20143&materia=IT8851&grupo=8A";
-    //    public static final String LOGIN_PAGE = "http://itdurango.mx/siit/index.php";
+//    public static final String LOGIN_PAGE = "http://itdurango.mx/siit/index.php";
 //    public static final String GUARDAR_PARCIALES = "http://itdurango.mx/siit/calificaciones_parciales_bd.php";//?periodo=20143&materia=IT8851&grupo=8A";
 //    public static final String REGISTRAR_PARCIALES = "http://itdurango.mx/siit/";//calificaciones_parciales.php";//?periodo=20143&materia=IT8851&grupo=8A";
 //    public static final String LISTADO_GRUPOS = "http://itdurango.mx/siit/grupos.php?accion=calificaciones_parciales";
+
+    /* Sección de parametros almacenados en las preferencias compartidas */
+    //nombre de las preferencias compartidas
     public static final String SharedPreferencesName = "LoginPrefsSIIT";
-    public static String usrKey = "UsrKey";
-    public static String passKey = "PassKey";
-    public static String storeKey = "RecuerdaKey";
+    //valor para usuario
+    public static final String usrKey = "UsrKey";
+    //valor para contraseña
+    public static final String passKey = "PassKey";
+    //valor para recordar contraseña
+    public static final String storeKey = "RecuerdaKey";
 
 
+    //objeto para manipular el cuadro de dialogo de progreso
     public static ProgressDialog ringProgressDialog;
 
-
+    /**
+     * Muestra un cuadro de dialogo de progreso con un mensaje personalizado
+     *
+     * @param mensaje mensaje a desplegar por el cuadro
+     * @param context contexto de ejecución
+     */
     public static void launchRingDialog(String mensaje, Activity context) {
         Estaticos.ringProgressDialog = ProgressDialog.show(context,
-                "Espera por favor ...", mensaje, true);
+                context.getString(R.string.tituloDialogo), mensaje, true);
         Estaticos.ringProgressDialog.setCancelable(false);
         new Thread(new Runnable() {
             @Override
@@ -48,6 +60,11 @@ public class Estaticos {
         }).start();
     }
 
+    /**
+     * Permite cambiar los valores de caracteres html a caracteres legibles
+     * @param valor cadena html
+     * @return cadena con caracteres especiales.
+     */
     public static String sanitize(String valor) {
         valor = valor.replace("&aacute;", "á");
         valor = valor.replace("&eacute;", "é");
@@ -63,10 +80,13 @@ public class Estaticos {
         valor = valor.replace("&Ntilde;", "Ñ");
         valor = valor.replace("&Atilde;", "Ñ");
 
-
         return valor;
     }
 
+    /**
+     * Muestra un alert con una vista "Acerca de..."
+     * @param activity
+     */
     public static void AcercaDe(Activity activity) {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         View view = LayoutInflater.from(activity).inflate(R.layout.acerca_de, null);

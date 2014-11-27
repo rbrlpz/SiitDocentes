@@ -30,5 +30,11 @@
     <string name="valida_login">Validando acceso</string>
     <string name="login_correcto">Acceso correcto</string>
     <string name="login_incorrecto">Error de acceso</string>
+    <string name="loading_grupos">Espera por favor, cargando item_grupos...</string>
+    <string name="loading_calificaciones">Espere por favor... cargando calificaciones</string>
+    <string name="load_guardarCalificaciones">Cargando información al sistema.</string>
+    <string name="guardaParcialesCorrecto">Proceso terminado correctamente</string>
+    <string name="errorGuardaParciales">Ha ocurrido un error, probablemente hay que reiniciar sesión</string>
+    <string name="tituloDialogo">Espera por favor ...</string>
 
 </resources>
