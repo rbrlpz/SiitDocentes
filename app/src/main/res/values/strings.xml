@@ -36,5 +36,7 @@
     <string name="guardaParcialesCorrecto">Proceso terminado correctamente</string>
     <string name="errorGuardaParciales">Ha ocurrido un error, probablemente hay que reiniciar sesión</string>
     <string name="tituloDialogo">Espera por favor ...</string>
+    <string name="dummytext">Carlos Alberto Espinosa de los Monteros Rivas</string>
+    <string name="error_sesion">Ha ocurrido un error, debe volver a iniciar sesión</string>
 
 </resources>

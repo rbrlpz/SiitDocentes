@@ -7,9 +7,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="40dp"
+        android:paddingTop="10dp"
         android:background="@color/guinda"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/tvGrupo"
@@ -23,8 +24,8 @@
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
+            android:layout_height="fill_parent"
+            android:gravity="right">
 
             <TextView
                 android:layout_width="wrap_content"

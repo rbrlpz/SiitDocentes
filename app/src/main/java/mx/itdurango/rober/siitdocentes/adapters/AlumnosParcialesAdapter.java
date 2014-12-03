@@ -28,6 +28,8 @@ package mx.itdurango.rober.siitdocentes.adapters;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Point;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -133,7 +135,29 @@ public class AlumnosParcialesAdapter extends BaseAdapter {
             }
         });
 
-        if (position % 2 == 0) {
+        final int pos = holder.etCalif.getId();
+
+        holder.etCalif.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+                ArrayList<String> califs = myItems.get(pos).getCalificaciones();
+                califs.set(unidad, s.toString());
+                myItems.get(pos).setCalificaciones(califs);
+            }
+        });
+
+        if (holder.etCalif.getId() % 2 == 0) {
             holder.item_alumno.setBackgroundColor(Color.LTGRAY);
         }
 

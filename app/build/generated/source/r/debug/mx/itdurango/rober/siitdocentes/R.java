@@ -18,11 +18,15 @@ public final class R {
     public static final class dimen {
         public static final int activity_horizontal_margin=0x7f050000;
         public static final int activity_vertical_margin=0x7f050001;
+        public static final int groupTextSize=0x7f050002;
+        public static final int nameSize=0x7f050003;
+        public static final int nameSizeLand=0x7f050004;
+        public static final int nameTextSize=0x7f050005;
+        public static final int nameTextSizeLand=0x7f050006;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int ic_launcher2=0x7f020001;
-        public static final int logo=0x7f020002;
+        public static final int logo=0x7f020000;
+        public static final int logo_itd=0x7f020001;
     }
     public static final class id {
         public static final int btnLogin=0x7f09000b;
@@ -73,28 +77,30 @@ public final class R {
         public static final int author1=0x7f060006;
         public static final int author2=0x7f060007;
         public static final int contrasena=0x7f060008;
-        public static final int email1=0x7f060009;
-        public static final int email2=0x7f06000a;
-        public static final int errorGuardaParciales=0x7f06000b;
-        public static final int error_cargaCalif=0x7f06000c;
-        public static final int error_descargaPlantilla=0x7f06000d;
-        public static final int error_parser=0x7f06000e;
-        public static final int grupos_asignados=0x7f06000f;
-        public static final int guardaParcialesCorrecto=0x7f060010;
-        public static final int hint_usuario=0x7f060011;
-        public static final int lista_alumnos=0x7f060012;
-        public static final int load_guardarCalificaciones=0x7f060013;
-        public static final int loading_calificaciones=0x7f060014;
-        public static final int loading_grupos=0x7f060015;
-        public static final int login=0x7f060016;
-        public static final int login_correcto=0x7f060017;
-        public static final int login_incorrecto=0x7f060018;
-        public static final int logo_itd=0x7f060019;
-        public static final int recordar_login=0x7f06001a;
-        public static final int tituloDialogo=0x7f06001b;
-        public static final int unidad=0x7f06001c;
-        public static final int usuario=0x7f06001d;
-        public static final int valida_login=0x7f06001e;
+        public static final int dummytext=0x7f060009;
+        public static final int email1=0x7f06000a;
+        public static final int email2=0x7f06000b;
+        public static final int errorGuardaParciales=0x7f06000c;
+        public static final int error_cargaCalif=0x7f06000d;
+        public static final int error_descargaPlantilla=0x7f06000e;
+        public static final int error_parser=0x7f06000f;
+        public static final int error_sesion=0x7f060010;
+        public static final int grupos_asignados=0x7f060011;
+        public static final int guardaParcialesCorrecto=0x7f060012;
+        public static final int hint_usuario=0x7f060013;
+        public static final int lista_alumnos=0x7f060014;
+        public static final int load_guardarCalificaciones=0x7f060015;
+        public static final int loading_calificaciones=0x7f060016;
+        public static final int loading_grupos=0x7f060017;
+        public static final int login=0x7f060018;
+        public static final int login_correcto=0x7f060019;
+        public static final int login_incorrecto=0x7f06001a;
+        public static final int logo_itd=0x7f06001b;
+        public static final int recordar_login=0x7f06001c;
+        public static final int tituloDialogo=0x7f06001d;
+        public static final int unidad=0x7f06001e;
+        public static final int usuario=0x7f06001f;
+        public static final int valida_login=0x7f060020;
     }
     public static final class style {
         /**  Customize your theme here. 

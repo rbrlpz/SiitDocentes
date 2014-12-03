@@ -3,6 +3,7 @@
     android:id="@+id/item_alumno"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="left"
     android:orientation="horizontal">
 
     <LinearLayout
@@ -15,7 +16,6 @@
             style="@android:style/TextAppearance.DeviceDefault.Small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="left"
             android:text="TextView"
             android:textColor="@color/negro" />
 
@@ -24,10 +24,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/dummytext"
-            android:maxWidth="@dimen/nameSize"
-            android:minWidth="@dimen/nameSize"
+            android:maxWidth="@dimen/nameSizeLand"
+            android:minWidth="@dimen/nameSizeLand"
             android:textColor="@color/negro"
-            android:textSize="@dimen/nameTextSize" />
+            android:textSize="@dimen/nameTextSizeLand" />
     </LinearLayout>
 
     <LinearLayout

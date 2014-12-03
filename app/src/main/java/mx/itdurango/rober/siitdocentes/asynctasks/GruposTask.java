@@ -26,6 +26,7 @@
 package mx.itdurango.rober.siitdocentes.asynctasks;
 
 import android.os.AsyncTask;
+import android.widget.Toast;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -65,8 +66,17 @@ public class GruposTask extends AsyncTask<String, String, String> {
     protected void onPostExecute(String resultado) {
         super.onPostExecute(resultado);
         //procesa el html resultante de la petición httpGet
-        procesa(resultado);
-        Estaticos.ringProgressDialog.dismiss();
+        try {
+            procesa(resultado);
+            Estaticos.ringProgressDialog.dismiss();
+        } catch (Exception e) {
+            Toast.makeText(context, context.getString(R.string.error_sesion), Toast.LENGTH_LONG).show();
+            try {
+                finalize();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+            }
+        }
 
     }
 
